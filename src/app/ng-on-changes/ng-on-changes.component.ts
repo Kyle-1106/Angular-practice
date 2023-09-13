@@ -15,9 +15,9 @@ export class NgOnChangesComponent {
   ngOnChanges(changes: SimpleChanges): void {
     console.log(changes)
     //プロパティの変更が検出されたときに呼び出される
-    if (changes.inputMessage) {
-      this.message = 'Input message changed to: ' + changes.inputMessage.currentValue;
-    }
+    // if (changes.inputMessage) {
+    //   this.message = 'Input message changed to: ' + changes.inputMessage.currentValue;
+    // }
   }
 
   

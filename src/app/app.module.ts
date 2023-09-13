@@ -7,6 +7,7 @@ import { AngularcomponentComponent } from './angularcomponent/angularcomponent.c
 import { ParentComponent } from './parent/parent.component';
 import { ChildComponent } from './child/child.component';
 import { NgOnChangesComponent } from './ng-on-changes/ng-on-changes.component';
+import { TemplateComponent } from './template/template.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { NgOnChangesComponent } from './ng-on-changes/ng-on-changes.component';
     AngularcomponentComponent,
     ParentComponent,
     ChildComponent,
-    NgOnChangesComponent
+    NgOnChangesComponent,
+    TemplateComponent
   ],
   imports: [
     BrowserModule,

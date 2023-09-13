@@ -1,4 +1,5 @@
 import { Component} from '@angular/core';
+import { Task } from './task';
 
 @Component({
   selector: 'app-root',
@@ -7,5 +8,15 @@ import { Component} from '@angular/core';
 })
 export class AppComponent {
   title = 'Angular-Component';
-  parentMessage = 'Hello from parent!';
+  tasks:Task[]=[
+    {name:"牛乳を買う",state:true},
+    {name:"仕事行く",state:true},
+    {name:"寝る",state:false},
+  ]
+  newTaskTitle = '';
+//addtaskメソッド
+  addTask() {
+    this.tasks.push({name: this.newTaskTitle, state: false});
+    this.newTaskTitle = '';
+  }
 }

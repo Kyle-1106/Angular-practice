@@ -1,2 +1,9 @@
 <p>Hello</p>
-<app-ng-on-changes></app-ng-on-changes>
+<li *ngFor="let task of tasks">
+  {{task.name}}
+</li>
+<li>
+<input type="text" [(ngModel)]="newTaskTitle">]
+<button (click)="addTask()">追加</button>
+</li>
+newTaskTitleの値: {{ newTaskTitle }}
