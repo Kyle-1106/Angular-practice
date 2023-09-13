@@ -1,0 +1,5 @@
+<p>parent works!</p>
+<!--parentMessage　にはもちろんコンポーネントで定義したparentが入っている-->
+<p>Parent Message: {{ parentMessage }}</p>
+<!--子で定義したchildmessageにparentMessageを入れている-->
+<app-child [childmessage]="parentMessage"></app-child>
